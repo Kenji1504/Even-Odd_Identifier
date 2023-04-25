@@ -4,8 +4,11 @@
 # will be headed into by identifying if it is an even or odd number.
 
 #read numbers text file, open even.txt, open odd.txt
+with open("numbers.txt", "r") as num_file, open("even.txt") as even_file, open("odd.txt") as odd_file:
     #for each line in numbers text file
-    #convert numbers into integers
+    for line in num_file:
+        #convert numbers into integers
+        integer_value = int(line)
     #check the integers
     #if even, append to even.txt
     #if odd, append to odd.txt
