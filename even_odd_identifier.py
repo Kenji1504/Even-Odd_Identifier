@@ -4,7 +4,7 @@
 # will be headed into by identifying if it is an even or odd number.
 
 #read numbers text file, open even.txt, open odd.txt
-with open("numbers.txt", "r") as num_file, open("even.txt", "a") as even_file, open("odd.txt") as odd_file:
+with open("numbers.txt", "r") as num_file, open("even.txt", "a") as even_file, open("odd.txt", "a") as odd_file:
     #for each line in numbers text file
     for line in num_file:
         #convert numbers into integers
@@ -16,4 +16,4 @@ with open("numbers.txt", "r") as num_file, open("even.txt", "a") as even_file, o
            even_file.write(str(integer_value) + "\n")
         #if odd, append to odd.txt
         else: 
-            odd_file = integer_value
+            odd_file.write(str(integer_value) + "\n")
