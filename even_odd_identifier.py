@@ -9,6 +9,9 @@ with open("numbers.txt", "r") as num_file, open("even.txt") as even_file, open("
     for line in num_file:
         #convert numbers into integers
         integer_value = int(line)
-    #check the integers
-    #if even, append to even.txt
-    #if odd, append to odd.txt
+        #check the integers
+        even_num = integer_value % 2
+        #if even, append to even.txt
+        if even_num == 0:
+            print(str(integer_value))
+        #if odd, append to odd.txt
