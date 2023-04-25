@@ -13,5 +13,7 @@ with open("numbers.txt", "r") as num_file, open("even.txt") as even_file, open("
         even_num = integer_value % 2
         #if even, append to even.txt
         if even_num == 0:
-            print(str(integer_value))
+           even_file = integer_value 
         #if odd, append to odd.txt
+        else: 
+            odd_file = integer_value
